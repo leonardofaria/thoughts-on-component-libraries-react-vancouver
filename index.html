@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Thoughts on Component Libraries - Leonardo Faria</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Thoughts on Component Libraries</h1>
+          <h3 class="primary">Leonardo Faria</h3>
+        </section>
+
+        <section>
+          <h1>Leonardo</h1>
+
+          <ul>
+            <li>🇧🇷</li>
+            <li>Lead Software Developer @ Thinkific</li>
+            <li>www.leonardofaria.net</li>
+						<li>@leozera on Twitter</li>
+            <li>leonardofaria on Github</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Why?</h1>
+
+					<ul>
+            <li>Collaborate efficiently with Design and Devs</li>
+            <li>Stay consistent between codebases/products</li>
+						<li>Isolate complexity</li>
+          </ul>
+        </section>
+
+				<section>
+          <img src="img/bear.gif">
+        </section>
+
+        <section>
+          <h1>How?</h1>
+
+					<ul>
+						<li>How to style?</li>
+						<li>How to show?</li>
+						<li>How to build?</li>
+						<li>How to publish?</li>
+						<li>How to improve?</li>
+					</ul>
+        </section>
+
+				<section>
+          <h1>How to style?</h1>
+
+					<ul>
+						<li>styled-components</li>
+						<li>Sass</li>
+					</ul>
+        </section>
+
+				<section>
+          <h1>How to show?</h1>
+
+					<ul>
+						<li>
+							Storybook
+								<ul>
+									<li>Knobs</li>
+									<li>Netlify integration</li>
+								</ul>
+						</li>
+					</ul>
+        </section>
+
+				<section>
+					<video controls autoplay>
+				    <source src="img/knobs.mov" type="video/mov">
+				    <source src="img/knobs.mp4" type="video/mp4">
+					</video>
+        </section>
+
+				<section>
+          <img src="img/netlify.png">
+        </section>
+
+				<section>
+          <h1>How to build?</h1>
+
+					<ul>
+						<li>babel</li>
+						<li>webpack</li>
+					</ul>
+        </section>
+
+				<section>
+          <h1>How to publish?</h1>
+
+					<ul>
+						<li>Private repos for $7/month</li>
+						<li><code>npm install @thinkific/elements-library</code></li>
+					</ul>
+        </section>
+
+				<section>
+          <h1>How to improve?</h1>
+
+					<ul>
+						<li><a href="https://nodesecurity.io/">Node Security Platform</a></li>
+						<li><a href="https://help.github.com/articles/about-security-alerts-for-vulnerable-dependencies/">Github security alerts</a></li>
+						<li><a href="https://greenkeeper.io/">Greenkeeper</a> / <a href="https://www.dependencies.io/">dependencies.io</a></li>
+					</ul>
+        </section>
+
+				<section>
+          <h1>That's all folks!</h1>
+
+					<ul>
+						<li>Full post</li>
+						<li>Questions?</li>
+					</ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        progress: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
